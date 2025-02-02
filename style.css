@@ -1,0 +1,122 @@
+/*selector {
+    property: value;
+    property: value;
+} */
+
+body {
+    background-color:rgb(28, 28, 28);
+    color: rgb(203, 199, 199);
+    padding: .5em;
+}
+img {
+    width: 100%;
+}
+
+header {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 5em;
+}
+
+header > * {
+    margin-top: 0;
+}
+
+header > h1, header > p {
+    margin-right: 1em;
+}
+
+.iconimg {
+    width: 50px;
+    margin-right: 1em;
+}
+
+.flex {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin-top: 5em;
+}
+
+.grid2 > a {
+    grid-column: 1/-1;
+    text-align: center;
+}
+iframe {
+    width: 100%;
+}
+
+.grid2 form {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
+.grid2 form > * {
+    margin-bottom: 1em;
+}
+.grid2 form input, .grid2 form textarea {
+    width: 100%;
+    padding: .3em;
+    background-color: inherit;
+    border: 1px solid gray;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+a:link {
+    color: white;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: pink;
+
+}
+
+button {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+}
+
+/*style for the smaller screen*/
+@media (max-width:815px){
+    .grid3 {
+        grid-template-columns: 1fr 1fr;
+   
+    }
+    .grid2 {
+        grid-template-columns: 1fr;
+    }
+    header {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width:380px){
+    .grid3 {
+        grid-template-columns: 1fr ;
+   
+    }
+}
